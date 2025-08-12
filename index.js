@@ -1,7 +1,9 @@
-require("dotenv").config();
-const { Client, GatewayIntentBits, EmbedBuilder } = require("discord.js");
-const express = require("express");
-const { Webhooks } = require("@octokit/webhooks");
+import dotenv from "dotenv";
+dotenv.config();
+import { Client, GatewayIntentBits, EmbedBuilder } from "discord.js";
+import express from "express";
+import { Webhooks } from "@octokit/webhooks";
+
 const app = express();
 
 const client = new Client({
