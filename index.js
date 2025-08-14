@@ -10,8 +10,8 @@ const client = new Client({
 
 // Repository-channel mapping - fixed to use object access
 const CHANNEL_MAP = {
-  "ceu-dev/frontend": process.env.FRONTEND_CHANNEL_ID,
-  "ceu-dev/backend": process.env.BACKEND_CHANNEL_ID,
+  "ceu-dev/frontend": process.env.GITHUB_NOTIFICATIONS_CHANNEL,
+  "ceu-dev/backend": process.env.GITHUB_NOTIFICATIONS_CHANNEL,
 };
 
 const webhooks = new Webhooks({ secret: process.env.GITHUB_SECRET });
